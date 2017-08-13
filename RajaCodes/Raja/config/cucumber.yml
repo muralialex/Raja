@@ -1,0 +1,10 @@
+#default: --profile chrome --format pretty
+
+default: -r features --tags ~@login,~@wip,~@logout  --color --format pretty --format html -o results/results.html
+ci: -r features --profile phantomjs  DISPLAY=:99.0 HEADLESS=true TRAVIS=true --tags  ~@login,~@wip,~@logout  --format progress --format html -o results/results.html --format junit -o results
+
+
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+phantomjs: BROWSER=phantomjs
+

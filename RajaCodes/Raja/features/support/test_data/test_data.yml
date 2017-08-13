@@ -1,0 +1,6 @@
+urls:
+  tenant_home: 'https://qa1.learn.cisco/'
+
+titles:
+  non_sso_page: 'Welcome to Cisco Collaborative Knowledge : Sign In'
+
